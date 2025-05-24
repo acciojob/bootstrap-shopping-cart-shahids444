@@ -40,9 +40,14 @@
       background-color: #3b99e0;
       color: white;
       border: none;
+      text-decoration: none; /* Remove underline */
+      display: inline-block;
+      text-align: center;
     }
     .summary .btn:hover {
       background-color: #327fc7;
+      color: white;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -66,7 +71,8 @@
               <img src="https://via.placeholder.com/150" class="img-fluid" alt="Product 1">
             </div>
             <div class="col-md-8">
-              <h5>Product Name 1</h5>
+              <!-- Wrapped product name in an anchor -->
+              <h5><a href="#" class="text-decoration-none text-dark">Product Name 1</a></h5>
               <p>Description of product 1 goes here.</p>
               <p><strong>$29.99</strong></p>
             </div>
@@ -80,7 +86,7 @@
               <img src="https://via.placeholder.com/150" class="img-fluid" alt="Product 2">
             </div>
             <div class="col-md-8">
-              <h5>Product Name 2</h5>
+              <h5><a href="#" class="text-decoration-none text-dark">Product Name 2</a></h5>
               <p>Description of product 2 goes here.</p>
               <p><strong>$49.99</strong></p>
             </div>
@@ -94,7 +100,7 @@
               <img src="https://via.placeholder.com/150" class="img-fluid" alt="Product 3">
             </div>
             <div class="col-md-8">
-              <h5>Product Name 3</h5>
+              <h5><a href="#" class="text-decoration-none text-dark">Product Name 3</a></h5>
               <p>Description of product 3 goes here.</p>
               <p><strong>$19.99</strong></p>
             </div>
@@ -123,7 +129,8 @@
             <span>Total</span>
             <span>$99.97</span>
           </div>
-          <button class="btn w-100">Proceed to Checkout</button>
+          <!-- Checkout button as an anchor for cypress -->
+          <a href="#" class="btn w-100">Proceed to Checkout</a>
         </div>
       </div>
     </div>
